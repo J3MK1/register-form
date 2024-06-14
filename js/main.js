@@ -7,33 +7,31 @@ $(document).ready(function(){
 
     $('#cep').mask('00000-000')
 
-    // $('form').validate({
-    //     rules: {
-    //         firstname: {
-    //             required: true
-    //         },
-    //         lastname: {
-    //             required: true
-    //         },
-    //         email: {
-    //             required: true,
-    //             email: true
-    //         },
-    //         terms: {
-    //             required: true
-    //         }
-    //     },
-    //     submitHandler: function(form) {
-    //         console.log(form);
-    //     },
-    //     invalidHandler: function(event, validator) {
-    //         let fieldInvalid = validator.numberOfInvalids();
-    //         if (fieldInvalid) {
-    //             alert(`There is ${fieldInvalid} field(s) missing.`)
-    //         }
-    //         console.log(fieldInvalid);
-    //     }
-    // })
+    $('form').validate({
+        rules: {
+            firstname: {
+                required: true
+            },
+            lastname: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            terms: {
+                required: true
+            }
+        },
+        submitHandler: function(form) {
+            console.log(form);
+        },
+        invalidHandler: function(event, validator) {
+            let fieldInvalid = validator.numberOfInvalids();
+            if (fieldInvalid) {
+                alert(`There is ${fieldInvalid} field(s) missing.`)
+            }
+            console.log(fieldInvalid);
+        }
+    })
 })
-
-// Validate plugin não está funcionando
