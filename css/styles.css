@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    width: 720px;
+    max-width: 100%;
+    margin: auto;
+    background-color: #4D51A8;
+}
+
+h1,
+h2,
+p,
+#submit,
+form label {
+    font-family: "Nunito", sans-serif;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    color: #9379DB;
+    font-size: 1.7rem;
+}
+
+p {
+    color: gray;
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.left {
+    background: rgb(81,201,226);
+background: linear-gradient(30deg, rgba(81,201,226,1) 0%, rgba(139,125,220,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.left,
+.wrapper {
+    width: 360px;
+    height: 900px;
+    max-width: 100%; 
+    max-height: 100%;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
+
+.wrapper {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    padding: 2rem;
+    display: block;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+form input,
+button{
+    display: block;
+    padding: 6px;
+    width: 290px;
+    margin: 8px 0px;
+}
+
+form input[type="text"]:focus,
+form input[type="tel"]:focus,
+form input[type="email"]:focus {
+    outline: 1px solid #9379DB;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    max-width: 100%;
+}
+
+.flex input {
+    width: 30px;
+    height: 20px;
+}
+
+#submit {
+    margin-top: 30px;
+    background-color: #4CD0E5;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: #87a1ff;
+}
+
+input[type="checkbox"] {
+    accent-color: #4D51A8;
+}
+
+a {
+    text-decoration: none;
+}
